@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css">
+</head>
+<body>
+   <div id="carrousel">
+       <div id="container"></div>
+       <img src="image/Flèche droite.png" class="bouton">
+       <img src="image/Flèche gauche.png" class="bouton2">
+   </div>
+
+   <script>
+    document.body.onload = function () {
+    nbr = 5; // Nombre d'images
+    p = 0; // Position actuelle
+    container = document.getElementById("container");
+
+    // Largeur totale du container pour les images
+    container.style.width = (800 * nbr) + "px";
+
+    // Création dynamique des div pour les images
+    for (i = 1; i <= nbr; i++) {
+        div = document.createElement("div");
+        div.className = "photo";
+        div.style.backgroundImage = "url('image/image" + i + ".jpeg')";
+        container.appendChild(div);
+    }
+
+    // Boutons
+    let boutonGauche = document.querySelector(".bouton2"); // Sélectionne le bouton gauche
+    let boutonDroite = document.querySelector(".bouton"); // Sélectionne le bouton droit
+
+    // Fonction pour faire glisser vers la gauche
+    boutonDroite.onclick = function () {
+        if (p > -nbr + 1) { // Vérifie que `p` ne dépasse pas la limite gauche
+            p--;
+            container.style.transform = "translate(" + (p * 800) + "px)";
+            container.style.transition = "all 0.5s ease";
+        }
+    };
+
+    // Fonction pour faire glisser vers la droite
+    boutonGauche.onclick = function () {
+        if (p < 0) { // Vérifie que `p` ne dépasse pas la limite droite
+            p++;
+            container.style.transform = "translate(" + (p * 800) + "px)";
+            container.style.transition = "all 0.5s ease";
+        }
+    };
+};
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+body h1 {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container .champs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container .champs input[type=text] {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 50px;
+}
+.container .champs button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.container .champs button ion-icon {
+  font-size: 20px;
+  margin-right: 5px;
+  background: midnightblue;
+  padding: 0.5rem;
+  color: #f1f1f1;
+  border-radius: 50%;
+}
+.container ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.container ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container ul li .delete {
+  background: crimson;
+}
+.container ul li .modify {
+  background: yellow;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#carrousel {
+  width: 800px;
+  height: 400px;
+  border: solid 4px #FFF;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+#carrousel .photo {
+  width: 800px;
+  height: 400px;
+  margin: 0;
+  display: inline-block;
+  background-size: cover;
+}
+#carrousel #container {
+  width: 800px;
+  height: 400px;
+}
+#carrousel .bouton {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
+  top: 170px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+#carrousel .bouton:hover {
+  transform: rotate(0deg) scale(1.1);
+  opacity: 1;
+}
+#carrousel .bouton2 {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
+  top: 170px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.3s ease;
+}
+#carrousel .bouton2:hover {
+  transform: rotate(0deg) scale(1.1);
+  opacity: 1;
+}
+
+.perso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.perso .Joueur1 {
+  width: 250px;
+  margin-right: 30px;
+}
+.perso h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  letter-spacing: px;
+}
+.perso #p2Display,
+.perso #p1Display {
+  margin: 10px;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+}
+.player #p1,
+.player #p2 {
+  margin: 10px;
+  background-color: #00FFFF;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #00FFFF;
+  border-radius: 10px;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
